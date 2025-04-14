@@ -1,0 +1,227 @@
+.header{
+    box-shadow: 10px 10px 10px gainsboro;
+    height: 80px;
+    
+}
+.nav-item a{
+    font-family:cursive;
+    font-size: large;
+    font-weight: bold;
+    margin: 0;
+}
+.nav-item a:hover{
+    background-color: #F4F4F4;
+    border-radius: 20px;
+}
+.navbar{
+    background-color: white;
+}
+
+
+.wedding{
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+.box1{
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    display: none;
+    width: 100%;    
+    justify-content: left;
+}
+
+.birthday{
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+.box2{
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    display: none;
+    width: 100%;
+
+}
+
+.kids{
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+.box3{
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    display: none;
+    width: 100%;
+    
+}
+
+.party{
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+.box4{
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    display: none;
+    width: 100%;
+    
+}
+
+.gretting{
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+.box5{
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    display: none;
+    width: 100%;
+    
+}
+
+.trending{
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+.box6{
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    display: none;
+    width: 100%;
+    
+}
+
+.srch{
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+.box7{
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    display: none;
+    width: 100%;
+    
+}
+
+.btns button{
+    background-color: #F4F4F4;
+    border: #F4F4F4 2px solid;
+    border-radius: 20px;
+}
+.btns button:hover{
+    border: 1px solid black;
+}
+
+
+
+td:hover{
+    color: green;
+}
+
+.txt{
+    /* width: 70%; */
+    height: 200px;
+    border-radius: 30px;
+    align-items: center;
+    margin: 0 50px;
+    background-color: #FFF4EE;
+    /* line-height:5px; */
+}
+
+.img-box{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+    /* margin: auto; */
+}
+.img-box1 span{
+    margin-top: 10px;
+    color:lightgrey;
+    /* font-weight: bold; */
+    font-size:large;
+}
+.img-box2 span{
+    margin-top: 10px;
+    color:lightgrey;
+    /* font-weight: bold; */
+    font-size:large;
+}
+.img-box3 span{
+    margin-top: 10px;
+    color:lightgrey;
+    /* font-weight: bold; */
+    font-size:large;
+}
+.img-box4 span{
+    margin-top: 10px;
+    color:lightgrey;
+    /* font-weight: bold; */
+    font-size:large;
+}
+
+.img-box1{
+    width: 250px;
+    margin: 0;
+}
+.img-box1:hover{
+    box-shadow: 5px 5px 5px lightblue;
+    transform: scale(1.1);
+}
+
+.img-box2{
+    width: 250px;
+    margin: 0;
+}
+.img-box2:hover{
+    box-shadow: 5px 5px 5px lightblue;
+    transform: scale(1.1);
+}
+
+.img-box3{
+    width: 250px;
+    margin: 0;
+}
+.img-box3:hover{
+    box-shadow: 5px 5px 5px lightblue;
+    transform: scale(1.1);
+}
+
+.img-box4{
+    width: 250px;
+    margin: 0;
+}
+.img-box4:hover{
+    box-shadow: 5px 5px 5px lightblue;
+    transform: scale(1.1);
+}
+
+.footer-bg-clr{
+    background-color: #F8F9FA;
+    padding-top:50px ;
+}
+.footer-txt{
+    margin: 50px 100px 50px 150px;
+}
+.footer-btn{
+    text-align: center;
+}
+.tbl{
+    margin-top: 30px;
+}
+
+button:hover{
+    transform: scale(1.1);
+}

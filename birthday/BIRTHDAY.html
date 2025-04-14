@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello_Birthday</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="icon" type="image/x-icon" href="img/hello_birthday.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="BIRTHDAY.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        .navbar {
+            background-color: #F6F6F6;
+        }
+
+        .navbar-brand img,
+        footer img {
+            max-width: 100px;
+            width: 100%;
+        }
+
+        nav ul li {
+            font-family: 'poppins', sans-serif;
+            font-weight: bold;
+        }
+
+        nav ul li:hover {
+            color: darkslateblue;
+        }
+
+        .cover {
+            background-color: #F6F6F6;
+        }
+
+        .cover h1,
+        .bday-steps h1,
+        main h1 {
+            font-weight: bolder;
+            color: black;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .cover button {
+            font-weight: 600;
+            padding: 10px 50px;
+            font-size: larger;
+        }
+
+        @media (max-width:993px) {
+            .card img{
+                width: 180px;
+            }
+        }
+        @media (max-width:767px) {
+            .card{
+                width: 250px;
+                margin: auto;
+                margin-top: 10px;
+            }
+        }
+        @media (max-width:600px) {
+            main img {
+                align-items: center;
+                width: 400px;
+            }
+        }
+
+        .listing h1 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .listing p {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: gray;
+            font-size: 16px;
+        }
+
+        .listing .card {
+            box-shadow: rgb(172, 169, 169) 2px 2px 2px 2px;
+        }
+
+        .listing .card:hover {
+            box-shadow: grey 5px 5px 5px 5px;
+            background-color: rgb(235, 227, 227);
+        }
+
+        footer {
+            border-top: solid black 2px;
+            background-color: #F5EA7C;
+        }
+
+        /* nav dropdown */
+        .menu {
+            position: relative;
+            cursor: pointer;
+            z-index: 1;
+            width: 100%;
+        }
+
+        .submenu {
+            position: absolute;
+            top: 50px;
+            left: 0px;
+            /* right: 90px; */
+            background-color: #F6F6F6;
+            width: 900px;
+            z-index: 1;
+            display: none;
+        }
+
+        .submenu .content {
+            display: flex;
+
+        }
+
+        footer p {
+            color: black;
+        }
+
+        footer p:hover {
+            color:blue;
+        }
+
+        /* .submenu:hover{
+            display: block;
+        } */
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow ">
+        <div class="container">
+            <span class="navbar-brand "><img src="img/hello_birthday-removebg-preview.png" alt=""></span>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link menu" href="#">Birthdays
+                            <div class="submenu">
+                                <div class="row content float-start d-flex justify-content-start">
+                                    <div class="col-4">
+                                        <b><i class="fa-solid fa-person"></i> For Him</b>
+                                        <p>For Him</p>
+                                        <p>Husband</p>
+                                        <p>Dad</p>
+                                        <p>Brother</p>
+                                        <p>Grandfather</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <b><i class="fa-solid fa-person-dress"></i> For Her</b>
+                                        <p>For Her</p>
+                                        <p>Wife</p>
+                                        <p>Mother</p>
+                                        <p>Sister</p>
+                                        <p>Grandmother</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <b><i class="fa-solid fa-child-reaching"></i> Kids</b>
+                                        <p>Kids</p>
+                                        <p>For Girls</p>
+                                        <p>For Boys</p>
+                                        <p>Son</p>
+                                        <p>Daughter</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ocassions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Every Day</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Christmas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Gift Cards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Bussiness</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">FAQs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="cover mt-5 text-center">
+        <h1 class="col-12">MAKING EVERY BIRTHDAY SPECIAL🎂🎁 </h1>
+        <h4 class="cl-12">Easily gather videos & photos on their special day ❤️</h4>
+        <button type="submit" class="mt-3 btn btn-dark rounded-pill">Let's Party</button>
+
+    </section>
+    <section class="bday-steps mt-5 text-center">
+        <h1 class="col-12 m-auto">SEND A BIRTHDAY HELLO IN 3 EASY STEPS</h1>
+        <h5 class="col-10 w-50 m-auto">Be the unforgettable host who brings everyone together to create a truly unique
+            and special gift experience.</h5>
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class=" col-md-4 text-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/timetable.png" alt="" width="100px">
+                            <!-- <h5 class="card-title">Step 1</h5> -->
+                            <p class="card-text"> <span style="font-weight: bolder;"> Create 🎈 </span><br>It takes no
+                                more than 30 seconds to create your next event.</p>
+                            <button type="button" class="card-title btn btn-outline-dark  rounded-pill">Step
+                                1</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-4 text-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/card.png" alt="" width="100px">
+
+                            <p class="card-text"> <span style="font-weight: bolder;"> Share 🎁 </span> </br> Send the
+                                magic link with everyone so they can upload their birthday greeting.</p>
+                            <button type="button" class="card-title btn btn-outline-dark  rounded-pill ">Step
+                                2</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/celebration.png" alt="" width="100px">
+                            <!-- <h5 class="card-title">Step 3</h5> -->
+                            <p class="card-text"><span style="font-weight: bolder;"> Publish! 😄</span><br> Celebrate
+                                their special day with the gift of unforgettable memories.</p>
+                            <button type="button" class="card-title btn btn-outline-dark  rounded-pill">Step
+                                3</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <div class="container mt-5">
+            <div class="row d-flex">
+                <div class="col-sm-3 col-md-4 col-lg-6 text-center"><img src="img/two-people.webp" alt=""></div>
+                <div class="col-sm-12 col-md-10 text-center  col-lg-6 px-5 mt-sm-4 mt-md-4 heading">
+
+                    <h1>BIRTHDAYS WILL 🎈<br>NEVER BE THE SAME.</h1>
+
+                    <h5>CELEBRATE LIKE NEVER BEFORE</h5>
+
+                    <button type="submit" class="mt-2 btn btn-dark rounded-pill">I want to Celebrate Now</button>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="listing mt-5">
+            <h2 class="col-12 text-center">Personalised Birthday Cards</h2>
+            <p class="col-12 text-center">Sending a personalised birthday card is a fantastic way to show someone you
+                care about them. We have hundreds of unique birthday cards from amazing, independent artists for you to
+                customise. With Cardly you can send a birthday card that is funny, beautiful or quirky. Personalise your
+                card with a heartfelt message, decorate it with some doodles and pick a writing style that best
+                represents you and we’ll send it to more than 55 countries around the world at the click of a button.
+            </p>
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="img/australian-birthdsy.webp" alt="">
+                                <!-- <h5 class="card-title">Step 1</h5> -->
+                                <p class="card-text">Australian Birthday</p>
+                                <button type="button" class="btn btn-outline-info text-dark">VIEW</button>
+                                <button type="button" class="btn btn-info text-white">WRITE</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="img/beetle-goose.webp" alt="">
+
+                                <p class="card-text">Beetle Goose</p>
+                                <button type="button" class="btn btn-outline-info text-dark">VIEW</button>
+                                <button type="button" class="btn btn-info text-white">WRITE</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="img/birthday-koalas.webp" alt="">
+                                <!-- <h5 class="card-title">Step 3</h5> -->
+                                <p class="card-text">Koala Birthday</p>
+                                <button type="button" class="btn btn-outline-info text-dark">VIEW</button>
+                                <button type="button" class="btn btn-info text-white">WRITE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-4 text-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="img/boho-birds.webp" alt="">
+                                <!-- <h5 class="card-title">Step 1</h5> -->
+                                <p class="card-text">Boho Birds Birthday</p>
+                                <button type="button" class="btn btn-outline-info text-dark">VIEW</button>
+                                <button type="button" class="btn btn-info text-white">WRITE</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="img/ha-aa-aa-ppy-birthday.webp" alt="">
+
+                                <p class="card-text">Ha-Aa-Aa-Ppy</p>
+                                <button type="button" class="btn btn-outline-info text-dark">VIEW</button>
+                                <button type="button" class="btn btn-info text-white">WRITE</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="img/happy-birthday-sister.webp" alt="">
+                                <!-- <h5 class="card-title">Step 3</h5> -->
+                                <p class="card-text">Sisters Birthday</p>
+                                <button type="button" class="btn btn-outline-info text-dark">VIEW</button>
+                                <button type="button" class="btn btn-info text-white">WRITE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-4 text-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="img/have-the-cherry.webp" alt="">
+                                <!-- <h5 class="card-title">Step 1</h5> -->
+                                <p class="card-text">Cherry Birthday</p>
+                                <button type="button" class="btn btn-outline-info text-dark">VIEW</button>
+                                <button type="button" class="btn btn-info text-white">WRITE</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="img/let-the-cake-murder-begin.webp" alt="">
+
+                                <p class="card-text">Cake Murder</p>
+                                <button type="button" class="btn btn-outline-info text-dark">VIEW</button>
+                                <button type="button" class="btn btn-info text-white">WRITE</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="img/libra-birthday.webp" alt="">
+                                <!-- <h5 class="card-title">Step 3</h5> -->
+                                <p class="card-text">Libra Birthday</p>
+                                <button type="button" class="btn btn-outline-info text-dark">VIEW</button>
+                                <button type="button" class="btn btn-info text-white">WRITE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </main>
+
+    <footer class="mt-5 p-5">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-xs-5 col-sm-4 col-md-3">
+                    <img src="img/hello_birthday-removebg-preview.png" alt=""><br>
+                    <i class="fa-brands fa-facebook-f mt-3"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-square-pinterest"></i>
+                    <br>
+                    <img src="img/product_hunt.svg" alt="" class="mt-3">
+                </div>
+                <div class="col-xs-5 col-sm-4 col-md-3">
+                    <b>Product</b>
+                    <p>Simple Pricing</p>
+                    <p>Create the event</p>
+                    <p>Share your Gifts</p>
+                    <p>Enjoy the Event</p>
+                </div>
+                <div class="col-xs-5 col-sm-4 col-md-3">
+                    <b>Company</b>
+                    <p>Meet Us</p>
+                    <p>The Actors</p>
+                    <p>Testimonials</p>
+                </div>
+                <div class="col-xs-5 col-sm-4 col-md-3">
+                    <b>Resources</b>
+                    <p>Privacy policy</p>
+                    <p>Terms & Conditions</p>
+                    <p>Support</p>
+                </div>
+            </div>
+            <div class="row ms-auto mt-5">
+                <div class="col-6">
+                    <h6>Created with ❤️ by MAHEK</h6>
+                </div>
+                <div class="col-6">@2024 MAHEK,LLC. All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
